@@ -1,9 +1,17 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  pageExtensions: ["ts", "tsx", "mdx"],
+  experimental: {
+    // Inline Tailwind CSS: removes a render-blocking request for first-time visitors on slow networks
+    inlineCss: true,
+  },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   turbopack: {
     rules: {
       "*.css": {
@@ -14,4 +22,11 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
+
+export default withMDX(nextConfig);
