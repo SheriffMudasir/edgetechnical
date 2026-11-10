@@ -16,9 +16,9 @@ export const company = {
   descriptor: "Websites, software and AI for education.",
   // TODO(owner): confirm public email address and domain
   email: "hello@edgetechnical.ng",
-  // TODO(owner): replace with real phone number (international format, used for tel: links)
-  phone: "+234 800 000 0000",
-  phoneHref: "+2348000000000",
+  // From the Edgetechnical credit on the Al-Mu'minun portal. TODO(owner): confirm this is the public line
+  phone: "0810 230 1860",
+  phoneHref: "+2348102301860",
   // TODO(owner): replace with real office address
   address: "Office address coming soon · Abuja, FCT, Nigeria",
   hours: "Monday – Friday, 8:00am – 6:00pm WAT",

@@ -36,8 +36,8 @@ export default function TermsPage() {
       <h2>Intellectual property</h2>
       <p>
         The design, text, code and graphics on this site belong to Edgetechnical unless stated otherwise. You may share links to our
-        pages, but please don&apos;t copy or reuse our content or designs without permission. School names such as &ldquo;Greenfield
-        Academy&rdquo; and &ldquo;Crestview College&rdquo; on this site are fictional.
+        pages, but please don&apos;t copy or reuse our content or designs without permission. The school name &ldquo;Greenfield Academy&rdquo; on this site is
+        fictional.
       </p>
 
       <h2>Acceptable use</h2>

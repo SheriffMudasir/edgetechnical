@@ -9,7 +9,7 @@ import { pad2 } from "@/lib/utils";
 const points = [
   { title: "Offline-first, on-device AI", body: "The tutor runs on the phone. One bar of signal, or none, is enough." },
   { title: "A Socratic tutor that teaches rather than tells", body: "It asks the next good question instead of handing over the answer." },
-  { title: "Built for Nigerian exams", body: "Practice shaped around the papers Nigerian students actually sit." },
+  { title: "Built for WAEC, NECO and JAMB", body: "Past questions, practice modes, points, badges and weekly leaderboards." },
 ];
 
 export function StudyWiseShowcase() {
@@ -64,6 +64,9 @@ export function StudyWiseShowcase() {
             <Button href="/products/studywise" variant="light" size="lg">
               Explore StudyWise AI
             </Button>
+            <TextLink href="https://www.studywiseai.org" target="_blank" rel="noopener noreferrer" className="text-paper">
+              Visit studywiseai.org
+            </TextLink>
             <TextLink href="/ai" className="text-paper">
               Want AI for your school?
             </TextLink>

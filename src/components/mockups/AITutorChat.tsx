@@ -64,10 +64,10 @@ export function AITutorChat({ className }: { className?: string }) {
         <div className="flex h-full flex-col" aria-hidden>
           <div className="flex items-center gap-2.5 border-b border-line px-4 pb-3">
             <span className="flex size-8 items-center justify-center rounded-full bg-ivy font-display text-lg italic text-paper">
-              S
+              B
             </span>
             <div className="leading-tight">
-              <p className="text-[13px] font-semibold">Physics tutor</p>
+              <p className="text-[13px] font-semibold">Baba · Wise Mentor</p>
               <p className="text-[11px] text-slate">On-device · no data used</p>
             </div>
           </div>

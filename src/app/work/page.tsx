@@ -21,7 +21,7 @@ export default function WorkPage() {
       <PageHero
         label="Work"
         title="Built in code, *not stock photos.*"
-        sub="We're a new studio, founded in 2026, so we're honest about it: school projects marked Concept show how we work until client stories can be shared. StudyWise AI is our own product."
+        sub="A real school website and management system in Suleja, our own AI exam-prep platform, and a concept that shows where we're heading. Anything marked Concept is illustrative, not a client."
       />
       <section aria-label="Case studies" className="bg-paper pb-[clamp(80px,11vw,176px)]">
         <ul className="container-x grid gap-x-6 gap-y-16 md:grid-cols-2">
@@ -33,7 +33,7 @@ export default function WorkPage() {
           ))}
         </ul>
       </section>
-      <BigCta title="Your school could be our *first story.*" />
+      <BigCta title="Your school could be our *next story.*" />
     </>
   );
 }

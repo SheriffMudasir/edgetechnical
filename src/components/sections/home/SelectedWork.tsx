@@ -46,7 +46,7 @@ export function SelectedWork() {
           </div>
           <div className="max-w-sm space-y-4">
             <p className="text-ink/70">
-              We&apos;re a new studio, so we label concept work honestly. StudyWise AI is our own live product.
+              Live work for a real school and our own product, StudyWise AI. Concept work is labelled honestly.
             </p>
             <TextLink href="/work">All work</TextLink>
           </div>

@@ -55,7 +55,7 @@ export default function StudyWisePage() {
                 <Magnetic>
                   {hasStore ? (
                     <Button href={links.playStore ?? links.web ?? links.appStore ?? "#"} variant="light" size="lg" target="_blank" rel="noopener noreferrer">
-                      Get StudyWise AI
+                      Start free on StudyWise
                     </Button>
                   ) : (
                     <Button href="/contact?need=studywise-waitlist" variant="light" size="lg">
@@ -103,7 +103,7 @@ export default function StudyWisePage() {
             How it works
           </SectionLabel>
           <Reveal as="h2" id="how-title" className="h-section mt-8 max-w-[14ch]">
-            Download once. <span className="italic text-ivy">Study anywhere.</span>
+            Sign up free. <span className="italic text-ivy">Study smarter.</span>
           </Reveal>
           <ol className="mt-14 grid gap-3 md:grid-cols-3">
             {studywise.howItWorks.map((s, i) => (
@@ -212,8 +212,8 @@ export default function StudyWisePage() {
 
       <FaqSection items={studywise.faq} index={5} title="StudyWise questions" />
       <BigCta
-        title={hasStore ? "Start studying *smarter* today." : "Be first when StudyWise *opens up.*"}
-        button={hasStore ? "Get StudyWise AI" : "Join the waitlist"}
+        title={hasStore ? "Your exams, *with a crew behind you.*" : "Be first when StudyWise *opens up.*"}
+        button={hasStore ? "Start free on StudyWise" : "Join the waitlist"}
         href={hasStore ? (links.playStore ?? links.web ?? links.appStore ?? "/contact") : "/contact?need=studywise-waitlist"}
       />
     </>

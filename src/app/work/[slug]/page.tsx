@@ -65,6 +65,22 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
                 <p className="label-mono text-slate">Type</p>
                 <p className="mt-2">{c.kind}</p>
               </div>
+              {c.location && (
+                <div>
+                  <p className="label-mono text-slate">Location</p>
+                  <p className="mt-2">{c.location}</p>
+                </div>
+              )}
+              {c.liveUrl && (
+                <a
+                  href={c.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-[15px] font-medium text-paper transition-colors hover:bg-edge hover:text-ink"
+                >
+                  Visit live site <span aria-hidden className="transition-transform group-hover:translate-x-0.5">↗</span>
+                </a>
+              )}
               <div>
                 <p className="label-mono text-slate">Modules</p>
                 <ul className="mt-2 space-y-1.5">

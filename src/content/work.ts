@@ -1,8 +1,8 @@
 /**
  * Case studies. Bodies live in content/work/<slug>.mdx.
- * Concept projects are clearly labelled until real client work is confirmed.
- * TODO(owner): if a real client (e.g. a school we've built a management system and website for) agrees to be
- * featured, replace a concept with it and set `concept: false`.
+ * Concept projects are clearly labelled; real projects set `concept: false`.
+ * TODO(owner): confirm Al-Mu'minun International Academy is happy to be featured publicly, and add outcomes
+ * (e.g. online applications received) once they agree to share them.
  */
 
 export type CaseStudy = {
@@ -13,11 +13,47 @@ export type CaseStudy = {
   kind: string;
   summary: string;
   year: string;
-  cover: "greenfield" | "crestview" | "studywise" | "report";
+  location?: string;
+  liveUrl?: string;
+  cover: "greenfield" | "studywise" | "almuminun";
   modules: string[];
 };
 
 export const caseStudies: CaseStudy[] = [
+  {
+    slug: "al-muminun-international-academy",
+    title: "Al-Mu’minun International Academy",
+    concept: false,
+    pillar: "Engine Room",
+    kind: "School website & management system",
+    summary:
+      "A bilingual school website with online admissions and application tracking, connected to a school management system with staff and parent portals.",
+    year: "2026",
+    location: "Suleja, Niger State",
+    liveUrl: "https://al-muminun-school-management-system.vercel.app",
+    cover: "almuminun",
+    modules: [
+      "School website (English & Arabic)",
+      "Online admissions",
+      "Application status tracker",
+      "Staff & admin portal",
+      "Parent & guardian portal",
+      "Report cards, grades & attendance",
+    ],
+  },
+  {
+    slug: "studywise-ai",
+    title: "StudyWise AI",
+    concept: false,
+    pillar: "Study Room",
+    kind: "Our own product · AI exam prep",
+    summary:
+      "A gamified AI exam-prep platform for WAEC, NECO and JAMB, with past questions, AI feedback and a crew of six tutor characters.",
+    year: "2026",
+    liveUrl: "https://www.studywiseai.org",
+    cover: "studywise",
+    modules: ["WAEC, NECO & JAMB practice", "AI-powered feedback", "Tutor characters", "Points, badges & leaderboards", "Progress tracking"],
+  },
   {
     slug: "greenfield-academy",
     title: "Greenfield Academy",
@@ -28,28 +64,6 @@ export const caseStudies: CaseStudy[] = [
     year: "2026",
     cover: "greenfield",
     modules: ["Online admissions", "Result checker", "Fee payments", "News & events", "Gallery"],
-  },
-  {
-    slug: "studywise-ai",
-    title: "StudyWise AI",
-    concept: false,
-    pillar: "Study Room",
-    kind: "Our own product · AI exam prep",
-    summary: "An offline-first AI exam-prep app with on-device AI and Socratic, multi-persona tutors for Nigerian students.",
-    year: "2026",
-    cover: "studywise",
-    modules: ["On-device AI", "Socratic tutor", "Exam practice", "AI Points via Paystack", "Offline sync"],
-  },
-  {
-    slug: "crestview-college",
-    title: "Crestview College",
-    concept: true,
-    pillar: "Engine Room",
-    kind: "School management system",
-    summary: "Results entry, report-card PDFs, attendance and parent logins for a secondary school, with an offline app for teachers.",
-    year: "2026",
-    cover: "report",
-    modules: ["Results entry", "Report-card PDFs", "Attendance", "Parent logins", "Offline teacher app"],
   },
 ];
 

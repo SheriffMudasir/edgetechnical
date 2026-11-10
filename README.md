@@ -103,7 +103,7 @@ Local Performance scores were 83–92 on most pages, with simulated LCP around 3
 
 **Contact details** (`src/content/site.ts`)
 - [ ] Confirm the public email address and final domain (`hello@edgetechnical.ng` / `edgetechnical.ng` are placeholders)
-- [ ] Real phone number
+- [ ] Confirm the phone number 0810 230 1860 (taken from the Edgetechnical credit on the Al-Mu’minun portal)
 - [ ] Real office address
 - [ ] Set `NEXT_PUBLIC_WHATSAPP_NUMBER`
 - [ ] Real social profile URLs (or remove unused ones)
@@ -119,7 +119,7 @@ Local Performance scores were 83–92 on most pages, with simulated LCP around 3
 
 **StudyWise AI** (`src/content/studywise.ts`)
 - [ ] Which stats to show publicly, then set `showStats: true`
-- [ ] Play Store / App Store / web links (the waitlist CTA shows until these are set)
+- [ ] App Store / Play Store links if mobile apps ship (the web app link is already set)
 - [ ] AI Points pricing to display, then set `pricingConfirmed: true`
 - [ ] Screenshots and logo
 - [ ] Same stats note in `src/content/work/studywise-ai.mdx`
@@ -128,7 +128,7 @@ Local Performance scores were 83–92 on most pages, with simulated LCP around 3
 - [ ] Confirm the home-page commitment stats (`src/content/home.ts`)
 - [ ] Real team members and photos (`src/content/people.ts`, photos in `public/images/team`)
 - [ ] Real testimonials with permission, then set `showTestimonials: true`
-- [ ] Replace a concept case study with a real client once one agrees (`src/content/work.ts`, `src/content/work/crestview-college.mdx`)
+- [ ] Confirm Al-Mu’minun International Academy is happy to be featured, and add outcomes they agree to share (`src/content/work/al-muminun-international-academy.mdx`)
 
 **Legal**
 - [ ] Have the privacy policy reviewed by a Nigerian data-protection professional (NDPA 2023)

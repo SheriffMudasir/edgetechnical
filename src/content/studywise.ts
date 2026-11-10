@@ -1,14 +1,18 @@
 /**
  * StudyWise AI — our own product.
- * TODO(owner): confirm which StudyWise stats to show publicly (user count, revenue), app store / web links,
- * screenshots, and its logo.
+ * Live at https://www.studywiseai.org (free to start).
+ * TODO(owner): confirm which StudyWise stats to show publicly (user count, revenue), add app-store links if/when
+ * mobile apps ship, and add real screenshots and the StudyWise logo.
  */
 
 export const studywise = {
   name: "StudyWise AI",
-  oneLiner: "An AI exam-prep tutor that works offline, on-device, for students anywhere in Nigeria.",
+  url: "https://www.studywiseai.org",
+  signupUrl: "https://www.studywiseai.org/auth/signup",
+  exams: ["JAMB (UTME)", "WAEC (SSCE)", "NECO (SSCE)"],
+  oneLiner: "An AI exam-prep tutor for WAEC, NECO and JAMB, built to keep working for students anywhere in Nigeria.",
   pitch:
-    "StudyWise AI is our own product: an exam-prep app for Nigerian students that keeps teaching when the network drops. The AI runs on the phone, so a student in a village with one bar of signal studies with the same tutor as a student in Lagos.",
+    "StudyWise AI is our own product: a gamified exam-prep platform for WAEC, NECO and JAMB. Students practise past questions, get AI feedback on their weak areas, and learn with a crew of tutor characters. It's free to start, and built for the networks and phones Nigerian students actually have.",
   features: [
     {
       key: "offline",
@@ -22,13 +26,18 @@ export const studywise = {
     },
     {
       key: "personas",
-      title: "Multi-persona tutoring",
-      body: "Different tutor personalities for different moods: a patient explainer, a quick-fire drill coach, an exam examiner who marks like the real thing.",
+      title: "A crew of six tutors",
+      body: "Ada the tech guide, Aisha the creative, Baba the wise mentor, Ijeoma the calm scholar, Tunde the motivator and Zino the gamer. Students learn with the personality that suits them.",
     },
     {
       key: "exams",
-      title: "Built for Nigerian exams",
-      body: "Practice shaped around the papers Nigerian students actually sit, with explanations in clear, everyday English.",
+      title: "WAEC, NECO and JAMB, with past questions",
+      body: "Tailored practice modes and an extensive bank of past questions with detailed solutions and explanations.",
+    },
+    {
+      key: "gamified",
+      title: "Gamified, with progress you can see",
+      body: "Points, badges and weekly leaderboards keep students motivated, while progress tracking shows strengths, weak areas and how ready they are.",
     },
     {
       key: "points",
@@ -37,24 +46,24 @@ export const studywise = {
     },
   ],
   howItWorks: [
-    { title: "Download once", body: "Install StudyWise and download your subjects on Wi-Fi or data. The AI model comes with it." },
-    { title: "Study anywhere", body: "Practise past-question style papers and talk to your tutor with no connection at all." },
-    { title: "Sync when you can", body: "When you're back online, your progress and points sync automatically." },
+    { title: "Sign up free", body: "Create an account at studywiseai.org and pick your exam: JAMB, WAEC or NECO." },
+    { title: "Practise and ask", body: "Work through past questions and practice modes, with a tutor that guides you to the answer." },
+    { title: "Track and climb", body: "See your weak areas, earn points and badges, and climb the weekly leaderboard." },
   ],
   everywhere: [
     { title: "Low connectivity", body: "Designed for one bar of signal, or none." },
     { title: "Affordable phones", body: "Tuned to run on the budget Android phones students actually own." },
-    { title: "Light on data", body: "Download once; study for weeks without burning data." },
+    { title: "Light on data", body: "Built to stay usable on slow, expensive mobile data." },
   ],
   pricingNote:
     "StudyWise uses AI Points: top up small amounts when you need more tutoring, paid via Paystack. Practice questions and offline study are always available.",
   // TODO(owner): confirm pricing to display (points bundles and naira prices)
   pricingConfirmed: false,
-  // TODO(owner): store links — set to real URLs to show download buttons; null shows the waitlist CTA
+  // TODO(owner): add app-store links if/when mobile apps ship
   links: {
     playStore: null as string | null,
     appStore: null as string | null,
-    web: null as string | null,
+    web: "https://www.studywiseai.org/auth/signup" as string | null,
   },
   // TODO(owner): confirm public stats, then set showStats to true
   showStats: false,
@@ -65,8 +74,12 @@ export const studywise = {
   ],
   faq: [
     {
+      q: "Is StudyWise free?",
+      a: "Yes, it's free to get started at studywiseai.org. AI Points top up extra AI tutoring when you need more.",
+    },
+    {
       q: "Does StudyWise really work without internet?",
-      a: "Yes. Once your subjects are downloaded, lessons, practice and the AI tutor run on your phone. You only need a connection to download content, top up AI Points and sync progress.",
+      a: "StudyWise is designed offline-first, with on-device AI so students in low-connectivity areas can keep studying. You need a connection to sign up, sync progress and top up AI Points.",
     },
     {
       q: "Will the AI just give me the answers?",
@@ -74,7 +87,7 @@ export const studywise = {
     },
     {
       q: "Which exams does it cover?",
-      a: "StudyWise is built for Nigerian exams and the subjects students sit for them. Ask us for the current list of subjects.",
+      a: "JAMB (UTME), WAEC (SSCE) and NECO (SSCE), with practice modes and past questions for each.",
     },
     {
       q: "How do AI Points work?",
