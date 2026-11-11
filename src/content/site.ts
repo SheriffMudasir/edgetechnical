@@ -16,8 +16,7 @@ export const company = {
   descriptor: "Websites, software and AI for education.",
   // TODO(owner): confirm public email address and domain
   email: "hello@edgetechnical.ng",
-  // From the Edgetechnical credit on the Al-Mu'minun portal. TODO(owner): confirm this is the public line
-  phone: "0810 230 1860",
+  phone: "+234 810 230 1860",
   phoneHref: "+2348102301860",
   // TODO(owner): replace with real office address
   address: "Office address coming soon · Abuja, FCT, Nigeria",
@@ -29,9 +28,8 @@ export const company = {
 // TODO(owner): confirm final domain
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://edgetechnical.ng").replace(/\/$/, "");
 
-/** WhatsApp number in international format without "+" (e.g. 2348012345678). */
-// TODO(owner): set NEXT_PUBLIC_WHATSAPP_NUMBER in your environment
-export const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "2348000000000";
+/** WhatsApp number in international format without "+" (e.g. 2348102301860). */
+export const whatsappNumber = (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "2348102301860").replace(/\D/g, "");
 
 export function whatsappLink(message = "Hello Edgetechnical, I'd like to talk about a website for our school.") {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

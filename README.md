@@ -103,9 +103,9 @@ Local Performance scores were 83–92 on most pages, with simulated LCP around 3
 
 **Contact details** (`src/content/site.ts`)
 - [ ] Confirm the public email address and final domain (`hello@edgetechnical.ng` / `edgetechnical.ng` are placeholders)
-- [ ] Confirm the phone number 0810 230 1860 (taken from the Edgetechnical credit on the Al-Mu’minun portal)
+- [x] Confirm the phone number 0810 230 1860 (taken from the Edgetechnical credit on the Al-Mu’minun portal)
 - [ ] Real office address
-- [ ] Set `NEXT_PUBLIC_WHATSAPP_NUMBER`
+- [x] Set `NEXT_PUBLIC_WHATSAPP_NUMBER`
 - [ ] Real social profile URLs (or remove unused ones)
 
 **Brand**
